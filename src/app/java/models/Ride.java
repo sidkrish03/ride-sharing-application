@@ -1,14 +1,14 @@
 package app.java.models;
 
 class Ride {
-	private int id;
+	private int rideId;
 	private int origin, dest;
 	private int seats;
 	private RideStatus rideStatus;
 	private static final int AMT_PER_KM = 20;
 	
 	Ride() {
-		id = origin = dest = seats = 0;
+		rideId = origin = dest = seats = 0;
 		rideStatus = RideStatus.IDLE;
 	}
 	
@@ -25,12 +25,12 @@ class Ride {
 		return fare;
 	}
 	
-	public final int getId() {
-		return id;
+	public final int getRideId() {
+		return rideId;
 	}
 	
-	public void setId(int id) {
-		this.id = id;
+	public void setRideId(int rideId) {
+		this.rideId = rideId;
 	}
 	
 	public final  RideStatus getRideStatus() {
