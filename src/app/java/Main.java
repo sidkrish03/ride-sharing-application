@@ -12,10 +12,10 @@ public class Main {
 		// Test Case 1 - When a ride is created, closed and then updated
 		// Expected result - Fail/Error -> since a closed ride cannot be updated
 		rider.createRide(1, 50, 60, 1);
-		System.out.println(rider.closeRide());
+		System.out.println(rider.closeRide(1));
 		
 		rider.updateRide(1, 50, 60, 2);
-		System.out.println(rider.closeRide());
+		System.out.println(rider.closeRide(1));
 		
 		System.out.println("*******************************************************************************************");
 		
@@ -24,7 +24,7 @@ public class Main {
 		rider.createRide(1, 50, 60, 1);
 		rider.withdrawRide(1);
 		rider.updateRide(1, 50, 60, 2);
-		System.out.println(rider.closeRide());
+		System.out.println(rider.closeRide(1));
 		
 		System.out.println("*******************************************************************************************");
 		
@@ -32,7 +32,7 @@ public class Main {
 		// Expected result - Pass/Success
 		rider.createRide(1, 50, 60, 1);
 		rider.updateRide(1, 50, 60, 3);
-		System.out.println(rider.closeRide());
-	}
+		System.out.println(rider.closeRide(1));
+	}	
 
 }

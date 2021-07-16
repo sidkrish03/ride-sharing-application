@@ -1,7 +1,5 @@
 package app.java.models;
 
-// import app.java.models.RideStatus;
-
 class Ride {
 	private int id;
 	private int origin, dest;
